@@ -84,7 +84,7 @@ const NoteDetail = props => {
     return (
         <View>
            <ScrollView
-               contentContainerStyle={[styles.container, { paddingTop: headerHeight }]}
+               contentContainerStyle={[styles.container, { paddingTop: headerHeight}]}
            >
               <Text style={styles.time}>
                 {
@@ -131,11 +131,21 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 30,
         color: colors.PRIMARY,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        borderBottomWidth:2,
+        borderTopWidth:2,
+        borderTopColor:colors.PRIMARY,
+        borderBottomColor:colors.PRIMARY,
+        borderRadius: 0, 
+        padding: 10,
+        marginVertical: 10,
+        textAlign:'center'
     },
     desc: {
         fontSize: 20,
-        opacity:0.8
+        opacity:0.8,
+        textAlign:'center',
+        paddingTop:20
     },
     btnContainer: {
         position:'absolute',
